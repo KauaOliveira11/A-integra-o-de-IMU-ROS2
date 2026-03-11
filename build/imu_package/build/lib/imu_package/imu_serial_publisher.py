@@ -1,6 +1,8 @@
 import rclpy
 from rclpy.node import Node
+
 from std_msgs.msg import Float32
+from std_msgs.msg import Bool
 
 import serial
 import time
@@ -13,40 +15,75 @@ from tf2_ros import TransformBroadcaster
 class ImuSerialPublisher(Node):
 
     def __init__(self):
+
         super().__init__('imu_serial_publisher')
 
+        # =========================
+        # PARAMETROS
+        # =========================
+
         self.declare_parameter('port', '/dev/ttyACM0')
-        self.declare_parameter('baudrate', 115200)
+        self.declare_parameter('baudrate', 9600)
 
         port = self.get_parameter('port').value
         baudrate = self.get_parameter('baudrate').value
 
-        # TF broadcaster
+        # =========================
+        # TF BROADCASTER
+        # =========================
+
         self.tf_broadcaster = TransformBroadcaster(self)
 
-        # Publishers
+        # =========================
+        # TOPICOS IMU
+        # =========================
+
         self.pub_front_roll = self.create_publisher(Float32, '/imu/front/roll', 10)
         self.pub_front_pitch = self.create_publisher(Float32, '/imu/front/pitch', 10)
 
         self.pub_back_roll = self.create_publisher(Float32, '/imu/back/roll', 10)
         self.pub_back_pitch = self.create_publisher(Float32, '/imu/back/pitch', 10)
 
+        # =========================
+        # TOPICO BOTAO ESTOP
+        # =========================
+
+        self.pub_estop = self.create_publisher(Bool, '/robot/estop', 10)
+
+        # =========================
+        # ESTADO DO MOTOR
+        # =========================
+
+        self.pub_motor = self.create_publisher(Bool, '/robot/estado_motor', 10)
+
+        # =========================
+        # SERIAL
+        # =========================
+
         try:
+
             self.serial_conn = serial.Serial(port, baudrate, timeout=0.1)
 
             self.serial_conn.setDTR(False)
             self.serial_conn.setRTS(False)
 
             time.sleep(2)
+
             self.serial_conn.reset_input_buffer()
 
             self.get_logger().info("Serial conectada")
 
         except serial.SerialException as e:
+
             self.get_logger().error(str(e))
             raise SystemExit
 
+        # Timer 100Hz
         self.timer = self.create_timer(0.01, self.read_and_publish)
+
+    # =========================
+    # CONVERTE EULER -> QUATERNION
+    # =========================
 
     def euler_to_quaternion(self, roll, pitch, yaw):
 
@@ -66,6 +103,10 @@ class ImuSerialPublisher(Node):
 
         return qx, qy, qz, qw
 
+    # =========================
+    # PUBLICA TF
+    # =========================
+
     def publish_tf(self, frame_name, roll, pitch):
 
         t = TransformStamped()
@@ -75,10 +116,13 @@ class ImuSerialPublisher(Node):
         t.child_frame_id = frame_name
 
         if frame_name == "imu_front":
+
             t.transform.translation.x = 0.5
             t.transform.translation.y = 0.0
             t.transform.translation.z = 0.0
+
         else:
+
             t.transform.translation.x = 0.0
             t.transform.translation.y = 0.0
             t.transform.translation.z = 0.0
@@ -95,6 +139,10 @@ class ImuSerialPublisher(Node):
 
         self.tf_broadcaster.sendTransform(t)
 
+    # =========================
+    # LE SERIAL E PUBLICA
+    # =========================
+
     def read_and_publish(self):
 
         if self.serial_conn.in_waiting > 0:
@@ -107,14 +155,23 @@ class ImuSerialPublisher(Node):
 
                 parts = line.split(',')
 
-                if len(parts) == 18:
+                if len(parts) == 20:
 
                     try:
 
+                        # IMU FRONT
                         roll1 = float(parts[0])
                         pitch1 = float(parts[1])
+
+                        # IMU BACK
                         roll2 = float(parts[9])
                         pitch2 = float(parts[10])
+
+                        # BOTAO
+                        botao = int(parts[18])
+
+                        # MOTOR
+                        motor = int(parts[19])
 
                         msg = Float32()
 
@@ -130,9 +187,32 @@ class ImuSerialPublisher(Node):
                         msg.data = pitch2
                         self.pub_back_pitch.publish(msg)
 
-                        # Publica TF
+                        # PUBLICA TF
+
                         self.publish_tf("imu_front", roll1, pitch1)
                         self.publish_tf("imu_back", roll2, pitch2)
+
+                        # PUBLICA ESTOP
+
+                        estop_msg = Bool()
+
+                        if botao == 1:
+                            estop_msg.data = True
+                        else:
+                            estop_msg.data = False
+
+                        self.pub_estop.publish(estop_msg)
+
+                        # PUBLICA ESTADO DO MOTOR
+
+                        motor_msg = Bool()
+
+                        if motor == 1:
+                            motor_msg.data = True
+                        else:
+                            motor_msg.data = False
+
+                        self.pub_motor.publish(motor_msg)
 
                     except ValueError:
                         pass
@@ -145,9 +225,11 @@ def main(args=None):
     node = ImuSerialPublisher()
 
     try:
+
         rclpy.spin(node)
 
     except KeyboardInterrupt:
+
         pass
 
     finally:
@@ -156,6 +238,7 @@ def main(args=None):
             node.serial_conn.close()
 
         node.destroy_node()
+
         rclpy.shutdown()
 
 

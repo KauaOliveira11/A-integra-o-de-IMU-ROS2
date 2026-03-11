@@ -1,0 +1,29 @@
+running develop
+Removing /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu-package.egg-link (link to .)
+running egg_info
+writing ../../build/imu_package/imu_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_package/imu_package.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_package/imu_package.egg-info/entry_points.txt
+writing requirements to ../../build/imu_package/imu_package.egg-info/requires.txt
+writing top-level names to ../../build/imu_package/imu_package.egg-info/top_level.txt
+reading manifest file '../../build/imu_package/imu_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_package/imu_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying imu_package/imu_serial_publisher.py -> /home/fbot/Área de Trabalho/IMU_WS/build/imu_package/build/lib/imu_package
+running install
+running install_lib
+creating /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package
+copying /home/fbot/Área de Trabalho/IMU_WS/build/imu_package/build/lib/imu_package/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package
+copying /home/fbot/Área de Trabalho/IMU_WS/build/imu_package/build/lib/imu_package/imu_serial_publisher.py -> /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/imu_serial_publisher.py to imu_serial_publisher.cpython-310.pyc
+running install_data
+copying resource/imu_package -> /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/imu_package
+copying launch/imu.launch.py -> /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/imu_package/launch
+running install_egg_info
+Copying ../../build/imu_package/imu_package.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_serial_publisher script to /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/imu_package
+writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/imu_package/install.log'
