@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
 	'imu_serial_publisher = imu_package.imu_serial_publisher:main',
+    'cmd_vel_to_serial_ros2 = imu_package.cmd_vel_to_serial_ros2:main'
         ],
     },
 )

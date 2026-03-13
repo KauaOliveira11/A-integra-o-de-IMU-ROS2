@@ -197,7 +197,7 @@ class ImuSerialPublisher(Node):
                         estop_msg = Bool()
 
                         if botao == 1:
-                            estop_msg.data = True
+                            estop_msg.data = True #aqui o
                         else:
                             estop_msg.data = False
 

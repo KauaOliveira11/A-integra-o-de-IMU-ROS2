@@ -1,7 +1,9 @@
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/__init__.py
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/imu_serial_publisher.py
+/home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/cmd_vel_to_serial_ros2.py
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/__pycache__/__init__.cpython-310.pyc
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/__pycache__/imu_serial_publisher.cpython-310.pyc
+/home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package/__pycache__/cmd_vel_to_serial_ros2.cpython-310.pyc
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/ament_index/resource_index/packages/imu_package
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/imu_package/package.xml
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/share/imu_package/launch/imu.launch.py
@@ -12,4 +14,5 @@
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package-0.0.0-py3.10.egg-info/PKG-INFO
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package-0.0.0-py3.10.egg-info/top_level.txt
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/python3.10/site-packages/imu_package-0.0.0-py3.10.egg-info/zip-safe
+/home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/imu_package/cmd_vel_to_serial_ros2
 /home/fbot/Área de Trabalho/IMU_WS/install/imu_package/lib/imu_package/imu_serial_publisher

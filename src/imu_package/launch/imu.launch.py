@@ -14,7 +14,19 @@ def generate_launch_description():
             {'baudrate': 9600}
         ]
     )
+    cmd_vel_node = Node(
+        package='imu_package',
+        executable='cmd_vel_to_serial_ros2',
+        name='cmd_vel_to_serial_ros2',
+        output='screen',
+        parameters=[
+            {'port': '/dev/ttyACM0'},
+            {'baudrate': 9600}
+        ]
+
+    )
 
     return LaunchDescription([
-        imu_node
+        imu_node,
+        cmd_vel_node
     ])

@@ -9,6 +9,7 @@ setup.py
 ../../build/imu_package/imu_package.egg-info/top_level.txt
 ../../build/imu_package/imu_package.egg-info/zip-safe
 imu_package/__init__.py
+imu_package/cmd_vel_to_serial_ros2.py
 imu_package/imu_serial_publisher.py
 launch/imu.launch.py
 resource/imu_package
