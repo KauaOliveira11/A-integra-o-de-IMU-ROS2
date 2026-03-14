@@ -10,8 +10,8 @@ def generate_launch_description():
         name='imu_serial_publisher',
         output='screen',
         parameters=[
-            {'port': '/dev/ttyACM0'},
-            {'baudrate': 9600}
+            {'port': '/dev/ttyUSB0'},
+            {'baudrate': 115200}
         ]
     )
     cmd_vel_node = Node(
@@ -20,8 +20,8 @@ def generate_launch_description():
         name='cmd_vel_to_serial_ros2',
         output='screen',
         parameters=[
-            {'port': '/dev/ttyACM0'},
-            {'baudrate': 9600}
+            {'port': '/dev/ttyUSB0'},
+            {'baudrate': 115200}
         ]
 
     )
