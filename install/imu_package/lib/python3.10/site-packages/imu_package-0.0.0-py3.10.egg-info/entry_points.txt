@@ -1,4 +1,0 @@
-[console_scripts]
-cmd_vel_to_serial_ros2 = imu_package.cmd_vel_to_serial_ros2:main
-imu_serial_publisher = imu_package.imu_serial_publisher:main
-

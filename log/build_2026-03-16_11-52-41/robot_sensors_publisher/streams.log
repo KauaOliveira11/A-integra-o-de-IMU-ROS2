@@ -1,0 +1,21 @@
+[0.724s] Invoking command in '/home/fbot/Área de Trabalho/IMU_WS/src/robot_sensors_publisher': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_sensors_publisher build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/install.log --single-version-externally-managed install_data
+[0.923s] running egg_info
+[0.923s] writing ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/PKG-INFO
+[0.924s] writing dependency_links to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/dependency_links.txt
+[0.924s] writing entry points to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/entry_points.txt
+[0.924s] writing requirements to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/requires.txt
+[0.924s] writing top-level names to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/top_level.txt
+[0.926s] reading manifest file '../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/SOURCES.txt'
+[0.927s] writing manifest file '../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/SOURCES.txt'
+[0.927s] running build
+[0.927s] running build_py
+[0.927s] running install
+[0.927s] running install_lib
+[0.928s] running install_data
+[0.928s] running install_egg_info
+[0.930s] removing '/home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.930s] Copying ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher-0.0.0-py3.10.egg-info
+[0.931s] running install_scripts
+[0.948s] Installing imu_serial_publisher script to /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/robot_sensors_publisher
+[0.948s] writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/install.log'
+[0.972s] Invoked command in '/home/fbot/Área de Trabalho/IMU_WS/src/robot_sensors_publisher' returned '0': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_sensors_publisher build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/install.log --single-version-externally-managed install_data

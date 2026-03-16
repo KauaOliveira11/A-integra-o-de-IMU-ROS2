@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info
+writing ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/requires.txt
+writing top-level names to ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/top_level.txt
+writing manifest file '../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build
+creating /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib
+creating /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib/robot_sensors_publisher
+copying robot_sensors_publisher/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib/robot_sensors_publisher
+copying robot_sensors_publisher/imu_serial_publisher.py -> /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib/robot_sensors_publisher
+running install
+running install_lib
+creating /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher
+copying /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib/robot_sensors_publisher/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher
+copying /home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/build/lib/robot_sensors_publisher/imu_serial_publisher.py -> /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher/imu_serial_publisher.py to imu_serial_publisher.cpython-310.pyc
+running install_data
+creating /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/ament_index
+creating /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/ament_index/resource_index
+creating /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/ament_index/resource_index/packages
+copying resource/robot_sensors_publisher -> /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/robot_sensors_publisher
+creating /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/robot_sensors_publisher/launch
+copying launch/imu_sensor_publisher.launch.py -> /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/share/robot_sensors_publisher/launch
+running install_egg_info
+Copying ../../build/robot_sensors_publisher/robot_sensors_publisher.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/python3.10/site-packages/robot_sensors_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing imu_serial_publisher script to /home/fbot/Área de Trabalho/IMU_WS/install/robot_sensors_publisher/lib/robot_sensors_publisher
+writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/robot_sensors_publisher/install.log'

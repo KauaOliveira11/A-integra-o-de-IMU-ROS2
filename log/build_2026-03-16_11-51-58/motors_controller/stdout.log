@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/motors_controller/motors_controller.egg-info
+writing ../../build/motors_controller/motors_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/motors_controller/motors_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/motors_controller/motors_controller.egg-info/entry_points.txt
+writing requirements to ../../build/motors_controller/motors_controller.egg-info/requires.txt
+writing top-level names to ../../build/motors_controller/motors_controller.egg-info/top_level.txt
+writing manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+reading manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build
+creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib
+creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+copying motors_controller/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+copying motors_controller/cmd_vel_to_serial_ros2.py -> /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+running install
+running install_lib
+creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+copying /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+copying /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller/cmd_vel_to_serial_ros2.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller/cmd_vel_to_serial_ros2.py to cmd_vel_to_serial_ros2.cpython-310.pyc
+running install_data
+creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index
+creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index
+creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index/packages
+copying resource/motors_controller -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller
+creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller/launch
+copying launch/motors_controller.launch.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller/launch
+running install_egg_info
+Copying ../../build/motors_controller/motors_controller.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cmd_vel_to_serial script to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/motors_controller
+writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log'

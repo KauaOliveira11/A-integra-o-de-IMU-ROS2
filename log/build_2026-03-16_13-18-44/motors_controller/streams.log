@@ -1,0 +1,21 @@
+[0.715s] Invoking command in '/home/fbot/Área de Trabalho/IMU_WS/src/motors_controller': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motors_controller build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log --single-version-externally-managed install_data
+[0.912s] running egg_info
+[0.912s] writing ../../build/motors_controller/motors_controller.egg-info/PKG-INFO
+[0.913s] writing dependency_links to ../../build/motors_controller/motors_controller.egg-info/dependency_links.txt
+[0.913s] writing entry points to ../../build/motors_controller/motors_controller.egg-info/entry_points.txt
+[0.913s] writing requirements to ../../build/motors_controller/motors_controller.egg-info/requires.txt
+[0.913s] writing top-level names to ../../build/motors_controller/motors_controller.egg-info/top_level.txt
+[0.914s] reading manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+[0.915s] writing manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+[0.915s] running build
+[0.915s] running build_py
+[0.915s] running install
+[0.915s] running install_lib
+[0.916s] running install_data
+[0.916s] running install_egg_info
+[0.918s] removing '/home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.918s] Copying ../../build/motors_controller/motors_controller.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller-0.0.0-py3.10.egg-info
+[0.919s] running install_scripts
+[0.936s] Installing cmd_vel_to_serial script to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/motors_controller
+[0.936s] writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log'
+[0.957s] Invoked command in '/home/fbot/Área de Trabalho/IMU_WS/src/motors_controller' returned '0': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motors_controller build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log --single-version-externally-managed install_data

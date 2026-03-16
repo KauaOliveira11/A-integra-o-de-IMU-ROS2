@@ -1,0 +1,39 @@
+[0.724s] Invoking command in '/home/fbot/Área de Trabalho/IMU_WS/src/motors_controller': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motors_controller build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log --single-version-externally-managed install_data
+[0.921s] running egg_info
+[0.922s] creating ../../build/motors_controller/motors_controller.egg-info
+[0.922s] writing ../../build/motors_controller/motors_controller.egg-info/PKG-INFO
+[0.922s] writing dependency_links to ../../build/motors_controller/motors_controller.egg-info/dependency_links.txt
+[0.922s] writing entry points to ../../build/motors_controller/motors_controller.egg-info/entry_points.txt
+[0.922s] writing requirements to ../../build/motors_controller/motors_controller.egg-info/requires.txt
+[0.922s] writing top-level names to ../../build/motors_controller/motors_controller.egg-info/top_level.txt
+[0.923s] writing manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+[0.924s] reading manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+[0.925s] writing manifest file '../../build/motors_controller/motors_controller.egg-info/SOURCES.txt'
+[0.925s] running build
+[0.925s] running build_py
+[0.925s] creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build
+[0.925s] creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib
+[0.925s] creating /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+[0.925s] copying motors_controller/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+[0.925s] copying motors_controller/cmd_vel_to_serial_ros2.py -> /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller
+[0.925s] running install
+[0.926s] running install_lib
+[0.927s] creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+[0.927s] copying /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller/__init__.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+[0.927s] copying /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build/lib/motors_controller/cmd_vel_to_serial_ros2.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller
+[0.928s] byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller/__init__.py to __init__.cpython-310.pyc
+[0.928s] byte-compiling /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller/cmd_vel_to_serial_ros2.py to cmd_vel_to_serial_ros2.cpython-310.pyc
+[0.928s] running install_data
+[0.928s] creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index
+[0.928s] creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index
+[0.928s] creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index/packages
+[0.928s] copying resource/motors_controller -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/ament_index/resource_index/packages
+[0.928s] copying package.xml -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller
+[0.928s] creating /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller/launch
+[0.928s] copying launch/motors_controller.launch.py -> /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/share/motors_controller/launch
+[0.928s] running install_egg_info
+[0.930s] Copying ../../build/motors_controller/motors_controller.egg-info to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages/motors_controller-0.0.0-py3.10.egg-info
+[0.930s] running install_scripts
+[0.946s] Installing cmd_vel_to_serial script to /home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/motors_controller
+[0.947s] writing list of installed files to '/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log'
+[0.977s] Invoked command in '/home/fbot/Área de Trabalho/IMU_WS/src/motors_controller' returned '0': PYTHONPATH=/home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/fbot/Área de Trabalho/IMU_WS/install/motors_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motors_controller build --build-base /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/build install --record /home/fbot/Área de Trabalho/IMU_WS/build/motors_controller/install.log --single-version-externally-managed install_data
